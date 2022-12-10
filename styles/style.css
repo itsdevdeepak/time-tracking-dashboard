@@ -59,29 +59,37 @@ img {
   overflow: hidden;
 }
 
+/* Main/Container Styles */
+
 .container {
   margin: 5rem 1.5rem;
 }
 
 @media (min-width: 550px) {
   .container {
-    margin: 0;
-
     display: grid;
     gap: 2em;
-    grid-template-columns: repeat(4, minmax(auto, 235px));
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    margin: 0;
+    max-width: 80%;
+    margin-inline: auto;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
   }
 }
 
 /* Herder/Profile Styles */
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
 
 .header {
   border-radius: 1.5em;
@@ -112,7 +120,15 @@ img {
 
 @media (min-width: 550px) {
   .header {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .header {
     grid-row: span 2;
+    grid-column-end: 2;
+    max-width: 235px;
   }
 
   .header .nav-links {
@@ -147,7 +163,7 @@ img {
   line-height: 1.4;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 900px) {
   .profile {
     flex-direction: column;
   }
@@ -223,9 +239,10 @@ img {
   align-items: center;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 900px) {
   .card {
     margin: 0;
+    max-width: 235px;
   }
 
   .even-column.details {
