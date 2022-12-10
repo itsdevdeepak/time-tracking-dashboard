@@ -44,7 +44,7 @@ const updateCards = (data, timeframe) => {
 
 // Updates cards based on timeframe and active class to active btn
 const updateTimeframe = (timeframe) => {
-  fetch("../data.json")
+  fetch("https://github.com/itsdevdeepak/time-tracking-dashboard-main/blob/main/data.json")
     .then((response) => {
       return response.json();
     })
