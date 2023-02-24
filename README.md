@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [News Homepage Main ↗](https://www.frontendmentor.io/solutions/time-tracking-dashboard-sOdlH43M8O)
-- Live Site URL: [Link ↗](https://itsdevdeepak.github.io/time-tracking-dashboard-main)
+- Live Site URL: [Link ↗](https://itsdevdeepak.github.io/time-tracking-dashboard)
 
 ### Built with
 
